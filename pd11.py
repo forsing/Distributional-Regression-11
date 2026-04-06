@@ -38,7 +38,7 @@ except Exception:
 SEED = 39
 np.random.seed(SEED)
 
-CSV_PATH = "/Users/4c/Desktop/GHQ/data/loto7hh_4592_k27.csv"
+CSV_PATH = "data/loto7hh_4592_k27.csv"
 COLS = ["Num1", "Num2", "Num3", "Num4", "Num5", "Num6", "Num7"]
 FEATURE_COLS = [f"f{i+1}" for i in range(7)]
 
@@ -259,28 +259,28 @@ LGBM dostupan: DA
   - m6_legacy_lgbm: 8.710657  (t=1.7s)
 
 [pozicija 3] trening + predikcija...
-  - m1_boosted: 14.551470  (t=1.5s)
-  - m2_cdf_median: 14.369185  (t=1.4s)
-  - m3_rf_single: 14.926078  (t=0.5s)
-  - m4_rf_extra: 15.723219  (t=0.3s)
-  - m5_soft_target: 15.647430  (t=0.0s)
-  - m6_legacy_lgbm: 14.627534  (t=1.7s)
+  - m1_boosted: x  (t=1.5s)
+  - m2_cdf_median: x  (t=1.4s)
+  - m3_rf_single: x  (t=0.5s)
+  - m4_rf_extra: x  (t=0.3s)
+  - m5_soft_target: x  (t=0.0s)
+  - m6_legacy_lgbm: x  (t=1.7s)
 
 [pozicija 4] trening + predikcija...
-  - m1_boosted: 19.829642  (t=1.5s)
-  - m2_cdf_median: 20.042729  (t=1.4s)
-  - m3_rf_single: 19.665341  (t=0.5s)
-  - m4_rf_extra: 20.238076  (t=0.3s)
-  - m5_soft_target: 20.291073  (t=0.0s)
-  - m6_legacy_lgbm: 18.838339  (t=1.9s)
+  - m1_boosted: y  (t=1.5s)
+  - m2_cdf_median: y  (t=1.4s)
+  - m3_rf_single: y  (t=0.5s)
+  - m4_rf_extra: y  (t=0.3s)
+  - m5_soft_target: y  (t=0.0s)
+  - m6_legacy_lgbm: y  (t=1.9s)
 
 [pozicija 5] trening + predikcija...
-  - m1_boosted: 24.082444  (t=1.5s)
-  - m2_cdf_median: 25.921422  (t=1.4s)
-  - m3_rf_single: 25.053232  (t=0.5s)
-  - m4_rf_extra: 25.126639  (t=0.3s)
-  - m5_soft_target: 24.990751  (t=0.0s)
-  - m6_legacy_lgbm: 23.444292  (t=2.1s)
+  - m1_boosted: z  (t=1.5s)
+  - m2_cdf_median: z  (t=1.4s)
+  - m3_rf_single: z  (t=0.5s)
+  - m4_rf_extra: z  (t=0.3s)
+  - m5_soft_target: z  (t=0.0s)
+  - m6_legacy_lgbm: z  (t=2.1s)
 
 [pozicija 6] trening + predikcija...
   - m1_boosted: 29.729726  (t=1.5s)
@@ -301,14 +301,14 @@ LGBM dostupan: DA
 ========================================================================
 POSEBNE PREDIKCIJE PO MODELU
 ========================================================================
-m1_boosted: [ 4  9 15 20 24 30 35]
-m2_cdf_median: [ 4  8 14 20 26 31 36]
-m3_rf_single: [ 5  9 15 20 25 30 35]
-m4_rf_extra: [ 4 10 16 20 25 31 35]
-m5_soft_target: [ 5 10 16 20 25 31 36]
-m6_legacy_lgbm: [ 5  9 15 19 23 30 35]
+m1_boosted: [ 4  9 x y z 30 35]
+m2_cdf_median: [ 4  8 x y z 31 36]
+m3_rf_single: [ 5  9 x y z 30 35]
+m4_rf_extra: [ 4 10 x y z 31 35]
+m5_soft_target: [ 5 10 x y z 31 36]
+m6_legacy_lgbm: [ 5  9 x y z 30 35]
 
 ========================================================================
-ALL PREDICTION: [ 4  9 15 20 25 30 35]
+ALL PREDICTION: [ 4  x 15 y 25 z 35]
 ========================================================================
 """
